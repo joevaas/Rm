@@ -136,22 +136,22 @@ async def not_joined(client: Client, message: Message):
     buttons = []
     
     if client.link_one is not None and message.from_user.id not in ADMINS and not await is_requested_one(filter, client, message):
-        buttons.append([InlineKeyboardButton(" Rᴇǫᴜᴇꜱᴛ Channel 1 ", url=client.link_one)])
+        buttons.append([InlineKeyboardButton("• Rᴇǫᴜᴇꜱᴛ Channel •", url=client.link_one)])
     # Check if the first and second channels are both set
     if client.invitelink is not None and message.from_user.id not in ADMINS and not await is_subscribed(filter, client, message):
-        buttons.append([InlineKeyboardButton(text=" Join Channel 1 ", url=client.invitelink)])
+        buttons.append([InlineKeyboardButton(text="• ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ •", url=client.invitelink)])
             
     if client.invitelink1 is not None and message.from_user.id not in ADMINS and not await is_subscribed2(filter, client, message):
-        buttons.append([InlineKeyboardButton(text=" Join channel 2 ", url=client.invitelink1)])
+        buttons.append([InlineKeyboardButton(text="• ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ •", url=client.invitelink1)])
 
 
     if invite_link is not None and message.from_user.id not in ADMINS and not await is_subscribed3(filter, client, message):
-        buttons.append([InlineKeyboardButton(text=" Join channel 3 ", url=invite_link)])
+        buttons.append([InlineKeyboardButton(text="• ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ •", url=invite_link)])
         
     try:
         buttons.append([
             InlineKeyboardButton(
-                text=" Try Again ☘️",
+                text="⚡ Get File ⚡",
                 url=f"https://t.me/{client.username}?start={message.command[1]}"
             )
         ])
