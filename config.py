@@ -102,17 +102,11 @@ def LOGGER(name: str) -> logging.Logger:
    
 
 class Txt(object):
-    about = f"""<b>😈 My Name :</b> <a href='https://t.me/Occoccicfx_bot'>[AW] File store bot 😈 </a>
-<b>📝 Language :</b> <a href='https://python.org'>Python 3</a>
-<b>📚 Library :</b> <a href='https://pyrogram.org'>Pyrogram 2.0</a>
-<b>🚀 Server :</b> <a href='https://heroku.com'>Heroku</a>
-<b>📢 Channel :</b> <a href='https://t.me/Anime_Warrior_Tamil'>AWT BOTS</a>
-<b>🛡️ :</b> <a href='https://t.me/+NITVxLchQhYzNGZl'>AWT Developer</a>
-    
-<b>😈 Bot Made By :</b> @AWT_Bot_Developer"""
-
-    help = f"""<b> Hi Friends If you Need to Watch More Animes Join Our Channel Now ⚜️☘️</a>
-<b>Main Channel 👉:</b> <a href='https://t.me/Anime_Warrior_Tamil'>Anime Warrior Tamil</a>
-
-<b>Old Animes Channel 👉:</b> <a href='https://t.me/+kjQw2NWdsCIxODk9'>Anime Warrior Index</a>"""
-
+    about = f"""<b>╭───────────⍟
+├➽ Dᴇᴠᴇʟᴏᴩᴇʀ : <a href='tg://user?id={6693549185}'>Mᴏᴏɴ</a>
+├➽ Lɪʙʀᴀʀy : <a href=https://github.com/pyrogram>Pʏʀᴏɢʀᴀᴍ</a>
+├➽ Lᴀɴɢᴜᴀɢᴇ : <a href=https://www.python.org>Pʏᴛʜᴏɴ 3</a>
+├➽ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ : <a href=https://t.me/Anime_Tamil_Hub>Aɴɪᴍᴇ Tᴀᴍɪʟ Hᴜʙ</a>
+├➽ Mᴀɪɴ Cʜᴀɴɴᴇʟ : <a href=https://t.me/Anime_Tamil_Hub>Aɴɪᴍᴇ Tᴀᴍɪʟ Hᴜʙ</a>
+├➽ Mᴀɪɴ Gʀᴏᴜᴘ : <a https://t.me/+8bE6LN_37EBmNGNl>𝘼𝙣𝙞𝙢𝙚 𝙂𝙖𝙣𝙜 𝙏𝙖𝙢𝙞𝙡</a></b>
+╰───────────────⍟ """
