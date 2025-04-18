@@ -28,7 +28,7 @@ REQUEST_CHANNEL_2 = int(os.environ.get("REQUEST_CHANNEL_2", "0"))
 
 
 START_PIC = os.environ.get("START_PIC", "https://4kwallpapers.com/images/wallpapers/naruto-uzumaki-3840x2160-18710.jpg")
-FORCE_PIC = os.environ.get("FORCE_PIC", "https://ibb.co/2tr6wx6")
+FORCE_PIC = os.environ.get("FORCE_PIC", "https://files.catbox.moe/3gaa9p.jpg")
 
 FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "1200")) # auto delete in seconds
 
