@@ -105,7 +105,7 @@ async def start_command(client: Client, message: Message):
         return
     else:
         reply_markup = InlineKeyboardMarkup([[
-            InlineKeyboardButton("⚡𝙹𝚘𝚒𝚗 𝙲𝚑𝚊𝚗𝚗𝚎𝚕s⚡", url=f"https://t.me/addlist/VjgALaxe725mZjY1"),
+            InlineKeyboardButton("⚡𝙹𝚘𝚒𝚗 𝙲𝚑𝚊𝚗𝚗𝚎𝚕s⚡", url=f"https://t.me/addlist/MYOQxybES3w5ZjE9"),
             InlineKeyboardButton("⚡Oᴜʀ Gʀᴏᴜᴘ⚡", url=f"https://t.me/+8bE6LN_37EBmNGNl")
             ],[
             InlineKeyboardButton("📢Help", callback_data="help"),
