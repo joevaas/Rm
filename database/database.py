@@ -10,7 +10,7 @@ from pyrogram.errors import FloodWait
 
 dbclient = pymongo.MongoClient(DB_URL)
 database = dbclient[DB_NAME]
-user_data = database['users']New collection for force subscription
+user_data = database['users']#New collection for force subscription
 
 
 req_one = database['req_one']  
