@@ -10,8 +10,7 @@ from pyrogram.errors import FloodWait
 
 dbclient = pymongo.MongoClient(DB_URL)
 database = dbclient[DB_NAME]
-user_data = database['users']
-fsub_collection = database['fsub_ids']  # New collection for force subscription
+user_data = database['users']New collection for force subscription
 
 
 req_one = database['req_one']  
@@ -80,37 +79,6 @@ async def add_req_two(user_id):
     except:
         pass
 
-def get_force_sub_channel():
-    try:
-        result = fsub_collection.find_one({"key": "FORCE_SUB_CHANNEL_4"})
-        return result["FSUB_ID"] if result else None
-    except Exception as e:
-        print(f"Error in get_force_sub_channel: {e}")
-        return None
-
-
-def set_force_sub_channel(channel_id, invite_link):
-    try:
-        fsub_collection.update_one(
-            {"key": "FORCE_SUB_CHANNEL_4"},
-            {"$set": {"FSUB_ID": channel_id, "invite_link": invite_link}},
-            upsert=True
-        )
-        print(f"Force subscription channel set to {channel_id}.")
-        print(f"Force subscription channel link set to {invite_link}.")
-    except Exception as e:
-        print(f"Error in set_force_sub_channel: {e}")
-
-def delete_force_sub_channel():
-    try:
-        fsub_collection.delete_one({"key": "FORCE_SUB_CHANNEL_4"})
-        print("Force subscription channel deleted from database.")
-    except Exception as e:
-        print(f"Error in delete_force_sub_channel: {e}")
-
-def get_invite_link():
-    data = fsub_collection.find_one({"key": "FORCE_SUB_CHANNEL_4"})
-    return data.get("invite_link") if data else None
 
 async def get_req_one(user_id):
     return req_one.find_one({"user_id": int(user_id)})
