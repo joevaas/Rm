@@ -131,7 +131,7 @@ async def start_command(client: Client, message: Message):
 
 @Bot.on_message(filters.command('start') & filters.private)
 async def not_joined(client: Client, message: Message):
-    invite_link = get_invite_link()
+    
     buttons = []
     
     if client.link_one is not None and message.from_user.id not in ADMINS and not await is_requested_one(filter, client, message):
