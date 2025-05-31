@@ -23,7 +23,7 @@ REQUEST_CHANNEL_1 = int(os.environ.get("REQUEST_CHANNEL_1", "-1002460804912"))
 
 FORCE_SUB_CHANNEL_2 = int(os.environ.get("FORCE_SUB_CHANNEL_2", "-1002459100850"))
 
-FORCE_SUB_CHANNEL_3 = int(os.environ.get("FORCE_SUB_CHANNEL_3", ""))
+FORCE_SUB_CHANNEL_3 = int(os.environ.get("FORCE_SUB_CHANNEL_3", "-1002152387281"))
 
 REQUEST_CHANNEL_2 = int(os.environ.get("REQUEST_CHANNEL_2", "0")) #Leave it to default value 0
 
